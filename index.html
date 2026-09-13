@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡 𝗧𝗥𝗔𝗗𝗘𝗥 𝗜𝗡𝗗𝗜𝗔 (𝗛𝗮𝗹𝗮𝗹 𝗪𝗼𝗿𝗸)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-<!-- Meta Pixel Code -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡 ( HALAL WORK )</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+ <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -23,637 +24,574 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1113737510978471&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+ 
+ <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
 
-    <style>
-        :root {
-            --bg-dark: #080705;
-            --card-surface: rgba(20, 17, 12, 0.85);
-            --card-border: rgba(234, 179, 8, 0.25);
-            --primary-gold: #facc15;
-            --primary-gold-bright: #ffe57f;
-            --gold-glow: rgba(250, 204, 21, 0.25);
-            --gold-gradient: linear-gradient(135deg, #fef08a 0%, #eab308 50%, #ca8a04 100%);
-            --btn-gold-grad: linear-gradient(135deg, #ffe066 0%, #d97706 100%);
-            --text-main: #fefce8;
-            --text-muted: #a1a1aa;
-        }
+    body {
+      background: #f4f7fb;
+      color: #1e293b;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 12px;
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    /* Mobile Container */
+    .mobile-card {
+      width: 100%;
+      max-width: 420px;
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 24px 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
 
-        body {
-            background-color: var(--bg-dark);
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            color: var(--text-main);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 24px 14px;
-            position: relative;
-            overflow-x: hidden;
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(250, 204, 21, 0.08) 0%, transparent 45%),
-                radial-gradient(circle at 90% 80%, rgba(180, 83, 9, 0.1) 0%, transparent 45%);
-        }
+    /* Live Online Badge */
+    .online-badge {
+      background-color: #e6f9ed;
+      color: #16a34a;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
 
-        /* Ambient Gold Glow Background Visuals */
-        .ambient-glow {
-            position: fixed;
-            border-radius: 50%;
-            filter: blur(120px);
-            pointer-events: none;
-            z-index: 0;
-        }
-        .glow-1 {
-            width: 320px;
-            height: 320px;
-            background: var(--gold-glow);
-            top: -50px;
-            left: -50px;
-        }
-        .glow-2 {
-            width: 300px;
-            height: 300px;
-            background: rgba(202, 138, 4, 0.2);
-            bottom: -50px;
-            right: -50px;
-        }
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+      animation: pulse 1.6s infinite;
+    }
 
-        .terminal-wrapper {
-            position: relative;
-            z-index: 1;
-            width: 100%;
-            max-width: 460px;
-            background: var(--card-surface);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            border: 1px solid var(--card-border);
-            border-radius: 32px;
-            padding: 28px 20px;
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(234, 179, 8, 0.08);
-        }
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+      }
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+      }
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+      }
+    }
 
-        /* Top Bar Status */
-        .status-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 24px;
-            padding: 10px 14px;
-            background: rgba(250, 204, 21, 0.04);
-            border: 1px solid var(--card-border);
-            border-radius: 50px;
-        }
+    /* Profile / Logo Avatar */
+    .avatar-wrapper {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      margin-bottom: 16px;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+    }
 
-        .status-pill {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--primary-gold);
-        }
+    .avatar-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #e2e8f0;
+      border: 3px solid #fff;
+    }
 
-        .pulse-ring {
-            width: 8px;
-            height: 8px;
-            background-color: var(--primary-gold);
-            border-radius: 50%;
-            box-shadow: 0 0 10px var(--primary-gold);
-            animation: pulse-animation 1.5s infinite;
-        }
+    /* Main Headings */
+    .main-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.35;
+      letter-spacing: -0.2px;
+      margin-bottom: 8px;
+    }
 
-        @keyframes pulse-animation {
-            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7); }
-            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(250, 204, 21, 0); }
-            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(250, 204, 21, 0); }
-        }
+    .sub-title {
+      font-size: 13px;
+      color: #2563eb;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
 
-        .halal-tag {
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            color: #fef08a;
-            background: rgba(234, 179, 8, 0.15);
-            border: 1px solid rgba(250, 204, 21, 0.4);
-            padding: 3px 10px;
-            border-radius: 20px;
-            text-transform: uppercase;
-        }
+    /* Rating Section */
+    .stars {
+      color: #f59e0b;
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
 
-        /* Profile Layout */
-        .profile-card {
-            text-align: center;
-            margin-bottom: 24px;
-        }
+    .rating-text {
+      font-size: 12px;
+      color: #64748b;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
 
-        .avatar-container {
-            position: relative;
-            width: 104px;
-            height: 104px;
-            margin: 0 auto 16px auto;
-        }
+    /* Action Button */
+    .cta-btn {
+      width: 100%;
+      background: linear-gradient(180deg, #1d4ed8 0%, #2563eb 50%, #1e40af 100%);
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 20px;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
 
-        .avatar-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 2px solid var(--primary-gold);
-            padding: 3px;
-            background: rgba(250, 204, 21, 0.1);
-            box-shadow: 0 0 25px rgba(234, 179, 8, 0.3);
-        }
+    .cta-btn:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    }
 
-        .badge-verified {
-            position: absolute;
-            bottom: 4px;
-            right: 4px;
-            background: var(--gold-gradient);
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid var(--bg-dark);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.8);
-        }
+    /* Stats Grid */
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
 
-        .badge-verified svg {
-            width: 14px;
-            height: 14px;
-            fill: #000000;
-        }
+    .stat-card {
+      background: #f8fafc;
+      border: 1px solid #edf2f7;
+      border-radius: 14px;
+      padding: 12px 6px;
+    }
 
-        .profile-name {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 22px;
-            font-weight: 700;
-            letter-spacing: -0.3px;
-            margin-bottom: 4px;
-            background: var(--gold-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    .stat-val {
+      font-size: 18px;
+      font-weight: 800;
+      color: #2563eb;
+      line-height: 1.2;
+    }
 
-        .profile-role {
-            font-size: 13px;
-            color: var(--text-muted);
-            font-weight: 500;
-            margin-bottom: 20px;
-        }
+    .stat-lbl {
+      font-size: 11px;
+      color: #64748b;
+      font-weight: 600;
+      margin-top: 4px;
+    }
 
-        /* High-Converting Golden CTA Buttons */
-        .cta-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            width: 100%;
-            background: var(--btn-gold-grad);
-            color: #000000;
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 800;
-            font-size: 16px;
-            padding: 18px 20px;
-            border-radius: 18px;
-            text-decoration: none;
-            box-shadow: 0 10px 30px rgba(217, 119, 6, 0.35);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-        }
+    /* Callout Titles */
+    .section-headline {
+      font-size: 16px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
 
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 35px rgba(250, 204, 21, 0.5);
-            filter: brightness(1.08);
-        }
+    .section-headline span {
+      color: #2563eb;
+    }
 
-        .cta-btn svg {
-            width: 22px;
-            height: 22px;
-            fill: #000000;
-        }
+    .section-sub {
+      font-size: 13px;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 4px;
+    }
 
-        /* Metric Grid Cards */
-        .metrics-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin: 22px 0;
-        }
+    .section-desc {
+      font-size: 12px;
+      color: #64748b;
+      margin-bottom: 16px;
+    }
 
-        .metric-card {
-            background: rgba(250, 204, 21, 0.03);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 12px 8px;
-            text-align: center;
-        }
+    /* Alert / Promo Strip */
+    .promo-banner {
+      width: 100%;
+      background: #fff7ed;
+      border: 1px dashed #fdba74;
+      color: #ea580c;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
 
-        .metric-value {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 15px;
-            font-weight: 700;
-            color: var(--primary-gold);
-        }
+    /* Features List */
+    .feature-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
 
-        .metric-label {
-            font-size: 10px;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-top: 4px;
-            font-weight: 600;
-        }
+    .feature-item {
+      background: #f8fafc;
+      border: 1px solid #f1f5f9;
+      padding: 14px 16px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: 600;
+      color: #334155;
+    }
 
-        /* Features List */
-        .features-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom: 22px;
-        }
+    .feature-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: #eff6ff;
+      color: #2563eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
 
-        .feature-box {
-            background: rgba(250, 204, 21, 0.02);
-            border: 1px solid rgba(234, 179, 8, 0.12);
-            border-radius: 16px;
-            padding: 12px 14px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+    /* Disclaimer & Links */
+    .disclaimer-text {
+      font-size: 10.5px;
+      color: #94a3b8;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
 
-        .icon-wrapper {
-            width: 38px;
-            height: 38px;
-            border-radius: 12px;
-            background: rgba(250, 204, 21, 0.1);
-            border: 1px solid rgba(250, 204, 21, 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 18px;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 16px;
+      width: 100%;
+    }
 
-        .icon-wrapper svg {
-            width: 18px;
-            height: 18px;
-            stroke: var(--primary-gold);
-        }
+    .footer-link {
+      font-size: 12px;
+      color: #2563eb;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
 
-        .feature-details h4 {
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--text-main);
-        }
+    .footer-link:hover {
+      text-decoration: underline;
+    }
 
-        .feature-details p {
-            font-size: 11px;
-            color: var(--text-muted);
-            margin-top: 2px;
-        }
+    /* POPUP MODAL STYLES */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(4px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+      padding: 16px;
+    }
 
-        /* Footer Section */
-        .footer-content {
-            text-align: center;
-            margin-top: 20px;
-            padding-top: 16px;
-            border-top: 1px solid rgba(234, 179, 8, 0.12);
-        }
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
 
-        .community-text {
-            font-size: 11px;
-            color: var(--text-muted);
-            margin-bottom: 12px;
-        }
+    .modal-box {
+      background: #ffffff;
+      width: 100%;
+      max-width: 400px;
+      max-height: 80vh;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transform: translateY(20px);
+      transition: transform 0.25s ease;
+    }
 
-        .footer-nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 12px;
-        }
+    .modal-overlay.active .modal-box {
+      transform: translateY(0);
+    }
 
-        .nav-btn {
-            background: none;
-            border: none;
-            color: var(--text-muted);
-            font-size: 11px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: color 0.2s ease;
-        }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
 
-        .nav-btn:hover {
-            color: var(--primary-gold);
-        }
+    .modal-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #0f172a;
+    }
 
-        .dot-sep {
-            color: rgba(234, 179, 8, 0.25);
-            font-size: 10px;
-        }
+    .close-btn {
+      background: #f1f5f9;
+      border: none;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 16px;
+      color: #64748b;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-        .copy-notice {
-            font-size: 10px;
-            color: rgba(255, 255, 255, 0.25);
-        }
+    .modal-body {
+      overflow-y: auto;
+      font-size: 13px;
+      color: #475569;
+      line-height: 1.6;
+      text-align: left;
+    }
 
-        /* Modal / Popup Styling */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.88);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            padding: 16px;
-        }
+    .modal-body p {
+      margin-bottom: 12px;
+    }
 
-        .modal-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background: #f8fafc;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
 
-        .modal-container {
-            background: #120e08;
-            border: 1px solid var(--card-border);
-            border-radius: 24px;
-            width: 100%;
-            max-width: 400px;
-            max-height: 80vh;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.95);
-            transform: scale(0.92);
-            transition: transform 0.3s ease;
-            overflow: hidden;
-        }
-
-        .modal-overlay.active .modal-container {
-            transform: scale(1);
-        }
-
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--card-border);
-        }
-
-        .modal-header-title {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 15px;
-            font-weight: 700;
-            color: var(--primary-gold);
-        }
-
-        .modal-close-icon {
-            background: rgba(250, 204, 21, 0.05);
-            border: 1px solid var(--card-border);
-            color: var(--text-muted);
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-size: 16px;
-        }
-
-        .modal-close-icon:hover {
-            background: rgba(250, 204, 21, 0.2);
-            color: var(--text-main);
-        }
-
-        .modal-body-content {
-            padding: 20px;
-            overflow-y: auto;
-            color: var(--text-muted);
-            font-size: 12px;
-            line-height: 1.6;
-        }
-
-        .modal-body-content h5 {
-            color: var(--primary-gold);
-            font-size: 13px;
-            margin-top: 10px;
-            margin-bottom: 4px;
-        }
-
-        .modal-body-content p {
-            margin-bottom: 10px;
-        }
-    </style>
+    .contact-item i {
+      color: #2563eb;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="ambient-glow glow-1"></div>
-    <div class="ambient-glow glow-2"></div>
-
-    <div class="terminal-wrapper">
-        <!-- Status Bar -->
-        <div class="status-header">
-            <div class="status-pill">
-                <span class="pulse-ring"></span>
-                LIVE ACCESS OPEN
-            </div>
-            <div class="halal-tag">100% HALAL WORK</div>
-        </div>
-
-        <!-- Profile Info -->
-        <div class="profile-card">
-            <div class="avatar-container">
-                <img class="avatar-img" src="Salman.jpeg" alt="Salman Memon Trader">
-                <div class="badge-verified">
-                    <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                </div>
-            </div>
-            <h1 class="profile-name">𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡</h1>
-            <p class="profile-role">Market Analyst & Strategy Expert</p>
-
-            <!-- Telegram CTA #1 -->
-            <a href="https://t.me/+pfZZuteya_EwNTU1" target="_blank" class="cta-btn" onclick="trackTelegramClick()">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.74 7.58-3.27 3.61-1.51 4.36-1.77 4.85-1.78.11 0 .35.03.5.15.13.11.17.26.19.37.02.11.03.35.01.54z"/></svg>
-                JOIN FREE TELEGRAM NOW
-            </a>
-        </div>
-
-        <!-- Metrics Grid -->
-        <div class="metrics-grid">
-            <div class="metric-card">
-                <div class="metric-value">DAILY</div>
-                <div class="metric-label">Market Tips</div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-value">REAL-TIME</div>
-                <div class="metric-label">Live Alerts</div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-value">100%</div>
-                <div class="metric-label">Free Join</div>
-            </div>
-        </div>
-
-        <!-- Highlights -->
-        <div class="features-list">
-            <div class="feature-box">
-                <div class="icon-wrapper">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
-                </div>
-                <div class="feature-details">
-                    <h4>Market Analysis</h4>
-                    <p>Daily breakdown & sharp trading insights</p>
-                </div>
-            </div>
-
-            <div class="feature-box">
-                <div class="icon-wrapper">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                </div>
-                <div class="feature-details">
-                    <h4>Instant Signals</h4>
-                    <p>Direct updates & signal notifications</p>
-                </div>
-            </div>
-
-            <div class="feature-box">
-                <div class="icon-wrapper">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                </div>
-                <div class="feature-details">
-                    <h4>Ethical Strategies</h4>
-                    <p>Guidance designed for high accuracy & compliance</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Telegram CTA #2 -->
-        <a href="https://t.me/+pfZZuteya_EwNTU1" target="_blank" class="cta-btn" onclick="trackTelegramClick()">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.74 7.58-3.27 3.61-1.51 4.36-1.77 4.85-1.78.11 0 .35.03.5.15.13.11.17.26.19.37.02.11.03.35.01.54z"/></svg>
-            JOIN FREE TELEGRAM NOW
-        </a>
-
-        <!-- Footer -->
-        <div class="footer-content">
-            <p class="community-text">⚡ Fast growing community • Free forever</p>
-            
-            <div class="footer-nav">
-                <button class="nav-btn" onclick="openModal('about')">About Us</button>
-                <span class="dot-sep">•</span>
-                <button class="nav-btn" onclick="openModal('terms')">Terms</button>
-                <span class="dot-sep">•</span>
-                <button class="nav-btn" onclick="openModal('disclaimer')">Disclaimer</button>
-                <span class="dot-sep">•</span>
-                <button class="nav-btn" onclick="openModal('contact')">Contact Us</button>
-            </div>
-
-            <p class="copy-notice">© 2026 𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡 𝗧𝗥𝗔𝗗𝗘𝗥 𝗜𝗡𝗗𝗜𝗔 (𝗛𝗮𝗹𝗮𝗹 𝗪𝗼𝗿𝗸). All rights reserved.</p>
-        </div>
+  <div class="mobile-card">
+    <!-- Live Online Badge -->
+    <div class="online-badge">
+      <span class="pulse-dot"></span>
+      5,947 Traders Online Now
     </div>
 
-    <!-- Modal Popup Structure -->
-    <div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
-        <div class="modal-container">
-            <div class="modal-header">
-                <h4 class="modal-header-title" id="modalTitle">Title</h4>
-                <button class="modal-close-icon" onclick="closeModal()">&times;</button>
-            </div>
-            <div class="modal-body-content" id="modalBody">
-                <!-- Content inserted via JS -->
-            </div>
-        </div>
+    <!-- LOGO / PROFILE IMAGE (Aap yahan apna Logo URL Daalein) -->
+    <div class="avatar-wrapper">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Salman Memon Logo" class="avatar-img">
     </div>
 
-    <script>
-        function trackTelegramClick() {
-            if(window.fbq) {
-                fbq('track', 'Lead');
-                fbq('track', 'Subscribe', {value: '1.00', currency: 'INR', time: new Date().toISOString()});
-                fbq('trackCustom', 'TelegramSubscriberRealtime', {timestamp: Date.now()});
-            }
-        }
+    <!-- Title & Subtitle -->
+    <h1 class="main-title">𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡<br><span style="font-size:15px; font-weight:700;">( HALAL WORK )</span></h1>
+    <div class="sub-title">
+      🏆 India's No.1 Stock Market Channel
+    </div>
 
-        const modalData = {
-            about: {
-                title: "About Us",
-                content: `
-                    <p>Welcome to <strong>𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡 𝗧𝗥𝗔𝗗𝗘𝗥 𝗜𝗡𝗗𝗜𝗔 (𝗛𝗮𝗹𝗮𝗹 𝗪𝗼𝗿𝗸)</strong>.</p>
-                    <p>We share market insights, real-time strategy updates, and educational guidance tailored for ethical and Halal-compliant trading practices.</p>
-                    <p>Our objective is to help traders understand market movements with clarity and discipline.</p>
-                `
-            },
-            terms: {
-                title: "Terms & Conditions",
-                content: `
-                    <h5>1. Educational Content</h5>
-                    <p>All information, ideas, and updates shared are strictly for educational and informational purposes.</p>
-                    <h5>2. Risk Responsibility</h5>
-                    <p>Trading financial markets contains inherent risk. Users are responsible for their own investment decisions.</p>
-                    <h5>3. Acceptance</h5>
-                    <p>By using this website/channel, you agree to abide by these terms and conditions.</p>
-                `
-            },
-            disclaimer: {
-                title: "Disclaimer",
-                content: `
-                    <p><strong>Financial Risk Warning:</strong> Stock and market trading involves substantial risk of loss and is not suitable for everyone.</p>
-                    <p>We are not SEBI registered advisors. Information provided here does not constitute financial or investment advice.</p>
-                    <p>Always perform your own research and consult with a certified financial advisor before taking positions.</p>
-                `
-            },
-            contact: {
-                title: "Contact Us",
-                content: `
-                    <p>Feel free to get in touch with us through our official support channel.</p>
-                    <h5>Official Telegram Channel:</h5>
-                    <p><a href="https://t.me/+pfZZuteya_EwNTU1" target="_blank" style="color: var(--primary-gold);">Click to Join Channel</a></p>
-                    <h5>Support Email:</h5>
-                    <p>support@salmanmemontrader.com</p>
-                `
-            }
-        };
+    <!-- Ratings -->
+    <div class="stars">★★★★★</div>
+    <div class="rating-text">4.9/5 (2340 Reviews)</div>
 
-        function openModal(key) {
-            const data = modalData[key];
-            if (data) {
-                document.getElementById('modalTitle').innerText = data.title;
-                document.getElementById('modalBody').innerHTML = data.content;
-                document.getElementById('modalOverlay').classList.add('active');
-            }
-        }
+    <!-- Telegram CTA Button 1 -->
+    <a href="https://t.me/+pfZZuteya_EwNTU1" target="_blank" class="cta-btn">
+      Join Free Telegram Channel &rarr;
+    </a>
 
-        function closeModal() {
-            document.getElementById('modalOverlay').classList.remove('active');
-        }
+    <!-- Stats Grid -->
+    <div class="stats-container">
+      <div class="stat-card">
+        <div class="stat-val">50K+</div>
+        <div class="stat-lbl">Members</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">5+</div>
+        <div class="stat-lbl">Years</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">95%</div>
+        <div class="stat-lbl">Accuracy</div>
+      </div>
+    </div>
 
-        function closeModalOnOverlay(e) {
-            if (e.target.id === 'modalOverlay') {
-                closeModal();
-            }
-        }
-    </script>
+    <!-- Mid Section Titles -->
+    <div class="section-headline">Get <span>FREE</span> Daily Calls</div>
+    <div class="section-sub">for NIFTY, BANKNIFTY & SENSEX</div>
+    <div class="section-desc">Join thousands of traders getting daily market analysis</div>
+
+    <!-- Limited Access Banner -->
+    <div class="promo-banner">
+      🔥 Limited FREE Access Available
+    </div>
+
+    <!-- Features List -->
+    <div class="feature-list">
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <span>Daily Nifty & BankNifty Levels</span>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <span>Educational Market Analysis</span>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
+        <span>50,000+ Subscribers Community</span>
+      </div>
+    </div>
+
+    <!-- Telegram CTA Button 2 -->
+    <a href="https://t.me/+pfZZuteya_EwNTU1" target="_blank" class="cta-btn">
+      Join Free Telegram Channel &rarr;
+    </a>
+
+    <!-- Disclaimer Text -->
+    <div class="disclaimer-text">
+      <strong>Disclaimer:</strong> This channel is for educational purposes only. Trading involves market risk. Please consult your financial advisor before making investment decisions.
+    </div>
+
+    <!-- Popup Triggers Footer Links -->
+    <div class="footer-links">
+      <button class="footer-link" onclick="openModal('terms')">Terms & Conditions</button>
+      <button class="footer-link" onclick="openModal('about')">About Us</button>
+      <button class="footer-link" onclick="openModal('disclaimer')">Disclaimer</button>
+      <button class="footer-link" onclick="openModal('contact')">Contact Us</button>
+    </div>
+  </div>
+
+  <!-- POPUP MODAL CONTAINER -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title" id="modalTitle">Modal Title</div>
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Content will load dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Content for Popups
+    const modalData = {
+      terms: {
+        title: "Terms & Conditions",
+        content: `
+          <p>Welcome to <strong>𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡 ( HALAL WORK )</strong>.</p>
+          <p>1. <strong>Educational Content:</strong> All content, research, and analysis shared on this platform/channel are strictly for educational and informational purposes.</p>
+          <p>2. <strong>No Financial Advice:</strong> We do not provide guaranteed returns, portfolio management, or personal financial advice.</p>
+          <p>3. <strong>User Responsibility:</strong> Any trades or investments made based on our analysis are purely at your own risk and responsibility.</p>
+        `
+      },
+      about: {
+        title: "About Us",
+        content: `
+          <p><strong>𝗦𝗔𝗟𝗠𝗔𝗡 𝗠𝗘𝗠𝗢𝗡</strong> is one of India's trusted market analysis and educational communities focused on Ethical & Halal trading principles in Stock Markets.</p>
+          <p>With over <strong>5+ years of experience</strong> and <strong>50,000+ active members</strong>, our goal is to help traders understand price action, Nifty/BankNifty levels, and market psychology.</p>
+        `
+      },
+      disclaimer: {
+        title: "Disclaimer",
+        content: `
+          <p><strong>Risk Warning:</strong> Trading in Stock, Futures, Options, and Commodities involves substantial risk of loss and is not suitable for every investor.</p>
+          <p>Valuations can fluctuate, and investors may lose more than their original investment.</p>
+          <p>We are not SEBI registered financial advisors (unless specified). Please consult a certified financial advisor before taking any financial steps.</p>
+        `
+      },
+      contact: {
+        title: "Contact Us",
+        content: `
+          <p>If you have any questions or queries, feel free to reach out to us:</p>
+          <div class="contact-item">
+            <i class="fa-brands fa-telegram"></i>
+            <div><strong>Telegram Join Link:</strong><br><a href="https://t.me/+pfZZuteya_EwNTU1" target="_blank" style="color:#2563eb;">Click Here to Join</a></div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div><strong>Email Support:</strong><br>contact@salmanmemon.com</div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div><strong>Support Hours:</strong><br>Mon - Sat (9:00 AM - 6:00 PM)</div>
+          </div>
+        `
+      }
+    };
+
+    function openModal(type) {
+      const data = modalData[type];
+      if (!data) return;
+      
+      document.getElementById('modalTitle').innerText = data.title;
+      document.getElementById('modalBody').innerHTML = data.content;
+      
+      const modal = document.getElementById('modalOverlay');
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modalOverlay');
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    function closeModalOnOverlay(e) {
+      if (e.target.id === 'modalOverlay') {
+        closeModal();
+      }
+    }
+  </script>
 </body>
 </html>
